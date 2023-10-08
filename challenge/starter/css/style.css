@@ -1,7 +1,12 @@
+:root {
+  --main-border: black 5px solid;
+  --element-border: black 1px solid;
+  --section-margin: 50px;
+}
+
 * {
   box-sizing: border-box;
 }
-
 
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
@@ -16,16 +21,17 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: aqua;
+  background-color: blanchedalmond;
 }
 
 /* Class for header container - to create flexbox container */
 .header-container {
-  border: black 5px solid;
+  border: var(--main-border);
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10px;
+  min-height: 80px;
 }
 
 /* Class for 'Imogen Coughlin' to separate from rest of menu */
@@ -48,17 +54,61 @@ body {
   padding: 5px;
 }
 
-.page-wrapper {
-  display: grid;
-  grid-template-row: repeat(5, 1fr);
-  grid-template-column: repeat(4, 1fr);
-  grid-template-areas: 
-    "intro intro intro intro"
-    "work work work about"
-    "work work work contact"
-    "footer footer footer footer";
-    justify-content: space-around;
-    margin: 20px;
-    border: black 5px solid;
+.hero-banner {
+  border: var(--main-border);
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  column-gap: 50px;
+  margin: var(--section-margin);
+}
+.hero-banner h2 {
+  display: block;
+
+}
+#pic {
+  max-width: 300px;
+  max-height: 300px;
 }
 
+.page-wrapper {
+  display: grid;
+  grid-template-row: 2fr 1fr;
+  grid-template-column: 2fr 1fr;
+  grid-template-areas: 
+    "work work about"
+    "work work contact";
+    justify-content: space-around;
+    margin: 20px;
+    border: var(--main-border);
+    margin: var(--section-margin);
+}
+.work-container {
+  display: flex;
+  justify-content: space-between;
+  border: var(--main-border);
+}
+
+/* adding borders to the containers to see where they are */
+.work-item-1, .about-container, .contact-container{
+  display: inline-block;
+  border: var(--element-border);
+}
+
+.page-wrapper h2 {
+  font-family: ;
+}
+
+#horiseon-landing-page {
+  max-width: 300px;
+  max-height: 250px;
+}
+
+.footer {
+  margin: 0px;
+  border: black 5px solid;
+  text-align: center;
+  position: static;
+  min-height: 80px;
+}
