@@ -10,38 +10,56 @@
 
   <body>
     <!-- main logo / nav -->
-    <header class="name-menu">
+    <header class="header-container">
       <h1 class="header-name">Imogen Coughlin</h1>
       <nav class="header-menu">
         <!-- Adding navigation tabs to go along the top of the screen -->
-        <h2 class="header-menu">About</h2>
-        <h2 class="header-menu">Work</h2>
-        <h2 class="header-menu">Contact</h2>
+        <h2 id="about">About</h2>
+        <h2 id="work">Work</h2>
+        <h2 id="contact">Contact</h2>
       </nav>
+      <!-- commented out the class names to see if it would work better with id -->
     </header>
 
-    <!-- hero banner -->
+    <!-- hero banner 
     <section class="hero-banner">
       <div>
         <h2>Cool subtitle here!</h2>
       </div>
-    </section>
+    </section>-->
 
     <main class="page-wrapper">
       <!-- about me -->
-      <section class="page-section" id="about">
+      <section class="about-container" id="about-container">
+      <div class="about-section" id="about-item">
         <h2>About Me</h2>
+        <p>info</p>
+      </div>
       </section>
 
       <!-- portfolio container -->
-      <section class="page-section" id="work">
+      <section class="work-container" id="work-container">
         <h2>Work</h2>
+      <div id="horiseon-landing-page" class="work-item-1">
+        <!-- <a href="#">
+          <img src="../../challenge/images/horiseon-landing-page.JPG" />
+        </a> -->
+      </div>
       </section>
 
       <!-- contact -->
-      <section class="page-section contact" id="contact">
+      <section class="contact-container" id="contact-container">
+      <div id="contact-section" class="contact-item">
         <h2>Contact Me</h2>
+        <p>info</p>
+      </div>
       </section>
     </main>
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+      Made by Imogen Coughlin 2023
+    </footer>
   </body>
 </html>
+ 

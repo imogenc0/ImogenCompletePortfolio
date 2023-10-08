@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,35 +19,46 @@ body {
   background-color: aqua;
 }
 
-/* Class for header menu - to create flexbox container */
-.name-menu {
-  border-style: groove;
+/* Class for header container - to create flexbox container */
+.header-container {
+  border: black 5px solid;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
 }
 
 /* Class for 'Imogen Coughlin' to separate from rest of menu */
 .header-name {
-  justify-content: flex-start;
-  align-items: center;
   font-family: Franklin Gothic Medium;
 }
+
 /* Class for items within header menu - within the flexbox */
 .header-menu {
-  justify-content: flex-start;
-  align-items: flex-end;
-  border-style: dashed;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
 }
 
+ /* Trying to make the items in the menu align so will create a separate flexbox for them below */
+/* container of flexbox = header menu */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+.header-menu h2 {
+  border: inset 2px solid;
+  padding: 5px;
 }
 
-p {
-  margin: 0;
+.page-wrapper {
+  display: grid;
+  grid-template-row: repeat(5, 1fr);
+  grid-template-column: repeat(4, 1fr);
+  grid-template-areas: 
+    "intro intro intro intro"
+    "work work work about"
+    "work work work contact"
+    "footer footer footer footer";
+    justify-content: space-around;
+    margin: 20px;
+    border: black 5px solid;
 }
+
