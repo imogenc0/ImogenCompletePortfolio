@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lernantino // Web Developer</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- main logo / nav -->
+    <header class="header-container">
+      <h1 class="header-name"><a id="refresh link" href="https://imogenc0.github.io/ImogenCompletePortfolio/">Imogen Coughlin</a></h1>
+      <nav class="header-menu">
+        <!-- Adding navigation tabs to go along the top of the screen -->
+        <h2 href="#about-section"id="about">About</h2>
+        <h2 id="work">Work</h2>
+        <h2 id="contact">Contact</h2>
+      </nav>
+      <!-- commented out the class names to see if it would work better with id -->
+    </header>
+
+    <!-- hero banner  -->
+    <!-- flexbox column for title and image -->
+    <section class="hero-banner">
+      <div>
+        <h2>Welcome to my portfolio!</h2>
+      </div>
+      <div>
+        <img id="profile-photo" class="image" src="../../challenge/images/pic of me.jpg"/>
+      </div>
+    </section>
+
+    <main class="page-wrapper">
+      <!-- page wrapper = flexbox 3 rows -->
+      <!-- portfolio container -->
+      <section class="work-container" id="work-container">
+        <!-- work container = grid 2 rows 1 column, work title takes up first row across -->
+        <h2 id="work-title">Work</h2>
+        <!-- item 1 -->
+        <!-- flexbox column for title and image -->
+        <div id="work-item-1" class="work-item-1">
+          <a class="image-link" href="https://imogenc0.github.io/accessibility-refactor-horiseon/">
+            Horiseon Landing Page<img
+              id="horiseon-landing-page" class="image"
+              src="../../challenge/images/horiseon-landing-page.JPG"
+          /></a>
+        </div>
+        <!-- item 2 -->
+        <!-- flexbox column for title and image -->
+        <div id="work-item-2" class="work-item-2 work-item">
+          <a href="#" class="image-link">
+            Placeholder Project Name
+          <img class="loading-page image" src="../../challenge/images/loading page.jpg"/>  
+        </div>
+        <!-- item 3 -->
+        <!-- flexbox column for title and image -->
+        <div id="work-item-3" class="work-item-3 work-item">
+          <a href="#" class="image-link">
+            Placeholder Project Name
+          <img class="loading-page image" src="../../challenge/images/loading page.jpg"/>  
+        </div>
+        <!-- item 4 -->
+        <!-- flexbox column for title and image -->
+        <div id="work-item-4" class="work-item-4 work-item">
+          <a href="#" class="image-link">
+            Placeholder Project Name
+          <img class="loading-page image" src="../../challenge/images/loading page.jpg"/>  
+        </div>
+      </section>
+
+      <!-- about me -->
+      <!-- flexbox column for title and content -->
+     <div class="about-contact"> 
+      <section class="about-container" id="about-container">
+        <div id="about-section" class="about-item">
+          <h2>About</h2>
+          <p>Hi, I'm Imogen and I started my web development journey in 2023. </p>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <!-- flexbox column for title and comment -->
+      <section class="contact-container" id="contact-container">
+        <div id="contact-section" class="contact-item">
+          <h2>Contact</h2>
+          <p>Welcome to </p>
+        </div>
+      </section>
+    </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+      <p>Made by Imogen Coughlin 2023</p>
+    </footer>
+  </body>
+</html>
